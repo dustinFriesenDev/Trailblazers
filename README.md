@@ -176,7 +176,7 @@ Project Link: [https://github.com/dustinFriesenDev/Trailblazers](https://github.
 Members of the Trailblazer Team
 * [Nichole O'Neal](https://github.com/nichole-o)
 * [Braden Evans](https://github.com/bradene0)
-<!-- * [Mohammed Abdel-Moomen](https://github.com/Mohammed0704) -->
+* [Mohammed Abdel-Moomen](https://github.com/Mohammed0704)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
