@@ -9,12 +9,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -68,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](/databases/images/edit%20hike%20trip.JPG)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/dustinFriesenDev/Trailblazers)
 
 Trailblazers is a capstone project for LaunchCode Bootcamp based out of St. Louis, MO. 
 
@@ -81,12 +75,12 @@ The app Trailblazers enables users to discover Missouri’s 90 state parks and h
 
 ### Built With
 
-* [![React][React.js]][React-url]
-* [![Spring][Spring.io]][Spring-url]
-* [![Mapbox][Mapbox.com]][Mapbox-url]
-* [![Discourse][Discourse.org]][Discourse-url]
-* [![MODNR-GIS][Gis-Modrn.com]][Modrn-url]
-* [![Auth-0][Auth0.com]][Auth0-url]
+* [![React][React.js]][React-url]{width:40 height:40}
+* [![Spring][Spring.io]][Spring-url]{width:40 height:40}
+* [![Mapbox][Mapbox.com]][Mapbox-url]{width:40 height:40}
+* [![Discourse][Discourse.org]][Discourse-url]{width:40 height:40}
+* [![MODNR-GIS][Gis-Modrn.com]][Modrn-url]{width:40 height:40}
+* [![Auth-0][Auth0.com]][Auth0-url]{width:40 height:40}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,3 +191,4 @@ Members of the Trailblazer Team
 [Modrn-url]: https://gis-modnr.opendata.arcgis.com/datasets/modnr::state-park-locations/explore?location=38.415037%2C-90.259088%2C8.00
 [Auth0.com]: https://cdn.freebiesupply.com/logos/large/2x/auth0-logo-png-transparent.png
 [Auth0-url]: https://auth0.com/docs
+[product-screenshot]: ./databases/images/edit%20hike%20trip.JPG
