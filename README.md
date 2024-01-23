@@ -118,11 +118,11 @@ MySQL server running.
    ```sh
    git clone https://github.com/dustinFriesenDev/Trailblazers
    ```
-3. Install NPM packages
+3. Install NPM packages in the frontend directory of the project
    ```sh
    npm install
    ```
-4. Run backend (IntelliJ is used in the README) to generate tables and fields.
+4. Start backend server (IntelliJ is used in the README) to generate tables and fields. (IntelliJ can take a few minutes and then a few more to build and index.)
 5. Open MySQL.
 6. (Right-Click on Windows mouse) Table Data Import Wizard.
 7. Browse to "database" directory at root of the project.
@@ -130,7 +130,7 @@ MySQL server running.
 9. Verify Field names match.
 10. Import.
 11. Repeat steps 6 - 10 for plants, animals, and geolocations
-12. Run frontend (VSCode was used)
+12. Start frontend server (VSCode was used). Use npm command in the frontend directory of project.
     ```sh
     npm start
     ```
