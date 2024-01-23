@@ -75,12 +75,24 @@ The app Trailblazers enables users to discover Missouri’s 90 state parks and h
 
 ### Built With
 
-* <a href="https://reactjs.org/" style="background-color: black; color: white; text-decoration: none;" height="20"><img src="https://rlemasquerier.github.io/react.svg" alt="React logo" width="20" height="20">React</a>
-* [![Spring][Spring.io]][Spring-url] 
-* [![Mapbox][Mapbox.com]][Mapbox-url]
-* [![Discourse][Discourse.org]][Discourse-url]
-* [![MODNR-GIS][Gis-Modrn.com]][Modrn-url]
-* [![Auth-0][Auth0.com]][Auth0-url]
+    <div style="background-color: #4cb050; height: 28px; width: 80px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://reactjs.org/" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://rlemasquerier.github.io/react.svg" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">React</a>
+</div>
+<div style="background-color: #4cb050; height: 28px; width: 125px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://spring.io/projects/spring-boot/" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">Spring Boot</a>
+</div>
+<div style="background-color: #4cb050; height: 28px; width: 100px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://www.mapbox.com/" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/mapbox_icon_138401.png" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">MapBox</a>
+</div>
+<div style="background-color: #4cb050; height: 28px; width: 100px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://www.discourse.org/plugins/github.html" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://avatars.githubusercontent.com/u/3220138?s=200&v=4" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">Discourse</a>
+</div>
+<div style="background-color: #4cb050; height: 28px; width: 315px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://gis-modnr.opendata.arcgis.com/datasets/modnr::state-park-locations/explore?location=38.415037%2C-90.259088%2C8.00" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://chambermaster.blob.core.windows.net/images/customers/2196/jobs/7603/200x200/Missouri-department-of-natural-resources.png" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">Missouri Department of Natural Resources</a>
+</div>
+<div style="background-color: #4cb050; height: 28px; width: 90px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+    <a href="https://auth0.com/docs" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://cdn.freebiesupply.com/logos/large/2x/auth0-logo-png-transparent.png" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">Auth-0</a>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
