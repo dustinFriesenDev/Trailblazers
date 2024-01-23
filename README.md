@@ -75,7 +75,7 @@ The app Trailblazers enables users to discover Missouri’s 90 state parks and h
 
 ### Built With
 
-    <div style="background-color: #4cb050; height: 28px; width: 80px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
+<div style="background-color: #4cb050; height: 28px; width: 80px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
     <a href="https://reactjs.org/" style="text-decoration: none; color:white; vertical-align: middle; padding-top: 5px;"><img src="https://rlemasquerier.github.io/react.svg" alt="React logo" width="20" height="20" style="margin-right: 3px; vertical-align: bottom;">React</a>
 </div>
 <div style="background-color: #4cb050; height: 28px; width: 125px; text-align: left; border-radius: 3px; padding-top: 3px; padding-left: 8px; margin-bottom: 3px;">
@@ -176,25 +176,11 @@ Project Link: [https://github.com/dustinFriesenDev/Trailblazers](https://github.
 Members of the Trailblazer Team
 * [Nichole O'Neal](https://github.com/nichole-o)
 * [Braden Evans](https://github.com/bradene0)
-* [Mohammed Abdel-Moomen](https://github.com/Mohammed0704)
+<!-- * [Mohammed Abdel-Moomen](https://github.com/Mohammed0704) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[React.js]: 
-[React-url]: 
-[Spring.io]: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8q7zCDdAu9M-2mj52kGE-e8jHEVqb3OeQwF34i-PMQ&s
-[Spring-url]: https://spring.io/projects/spring-boot/
-[Mapbox.com]: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mapbox_logo_2019.svg/1280px-Mapbox_logo_2019.svg.png
-[Mapbox-url]: https://www.mapbox.com/
-[Discourse.org]: https://avatars.githubusercontent.com/u/3220138?s=200&v=4
-[Discourse-url]: https://www.discourse.org/plugins/github.html
-[Gis-Modrn.com]: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/MODeptNaturalResources.png
-[Modrn-url]: https://gis-modnr.opendata.arcgis.com/datasets/modnr::state-park-locations/explore?location=38.415037%2C-90.259088%2C8.00
-[Auth0.com]: https://cdn.freebiesupply.com/logos/large/2x/auth0-logo-png-transparent.png 
-[Auth0-url]: https://auth0.com/docs
 [product-screenshot]: ./databases/images/edit%20hike%20trip.JPG
