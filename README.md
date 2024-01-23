@@ -75,7 +75,7 @@ The app Trailblazers enables users to discover Missouri’s 90 state parks and h
 
 ### Built With
 
-* <a href="https://reactjs.org/"><img src="https://rlemasquerier.github.io/react.svg" alt="React logo" width="20" height="20">React</a>
+* <a href="https://reactjs.org/" background-color="black" width="auto" height="20"><img src="https://rlemasquerier.github.io/react.svg" alt="React logo" width="20" height="20">React</a>
 * [![Spring][Spring.io]][Spring-url] 
 * [![Mapbox][Mapbox.com]][Mapbox-url]
 * [![Discourse][Discourse.org]][Discourse-url]
