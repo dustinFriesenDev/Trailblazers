@@ -65,7 +65,7 @@ const HikeList = ({ hikes, onEdit }) => {
                 </span>
               ))}
             </div>
-            <button id={trip.id} onClick={() => onEdit(trip, console.log(trip))}>
+            <button class="btn-edit" id={trip.id} onClick={() => onEdit(trip, console.log(trip))}>
               Edit
             </button>
             <button

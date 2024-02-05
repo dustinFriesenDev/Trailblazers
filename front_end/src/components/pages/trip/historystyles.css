@@ -119,14 +119,21 @@
   
   input,
   textarea {
-    width: 98%;
+    width: 100%;
     padding: 8px;
     margin-top: 4px;
+    resize: none;
   }
 
   .select-style{
     margin: 4px 0 ;
     width: 100%;
+    padding: 8px;
+  }
+
+  #btn-submit-trip{
+    margin-right: 5px;
+    margin-top: 5px;
   }
   
   button {
@@ -150,9 +157,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
   }
   
   .hike-card {
+    background-color: #452E16;
     border: 2px solid #4caf50; 
     border-radius: 8px;
     padding: 15px;
@@ -185,6 +194,10 @@
   
   .hike-card button:hover {
     background-color: #45a049;
+  }
+
+  .btn-edit{
+    margin-right: 5px;
   }
 
   span {
