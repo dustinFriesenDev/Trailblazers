@@ -1,1 +1,3 @@
 rootProject.name = 'trail_blazers'
+// MAY NEED THE NEXT LINE FOR HEROKU DEPLOYMENT
+// java.runtime.version=17
