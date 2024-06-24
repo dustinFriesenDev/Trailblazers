@@ -1,0 +1,39 @@
+.animal-header {
+    text-align: center;
+}
+
+.display-animals {
+    display: flex;
+    justify-content: space-around;
+}
+
+.animal-data-container {
+    min-width: 55%;
+   min-height: 600px;
+   border: 1px solid #85AB49;
+   border-radius: 5px;
+   padding: 10px 20px;
+   background-color: #452E16;
+}
+
+.animal-data {
+    margin: 10%;
+}
+
+.aniamal-drop-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.animal-drop-down {
+    
+    height: auto;
+    min-width: 400px;
+    margin: 15%;
+    background-color: #b89c72;
+}
+
+.animal-image {
+    height: auto;
+    max-width: 500px;
+}

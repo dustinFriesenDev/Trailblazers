@@ -1,0 +1,134 @@
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-container {
+  height: 450px;
+}
+
+.leftside-container{
+  width: 40%;
+}
+
+.save-container {
+  width: auto;
+}
+
+.create-trip {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: .85rem;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.small, small > a {
+  padding: 0 5px;
+  color: #FEF3E8;
+}
+
+small > a:hover, .photo-credit >a:hover {
+  color: #546e2a;
+}
+
+.search-plants {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.sidebar-size-plants {
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #f5fafe;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-wrap: wrap;
+  }
+
+  /* button layout */
+    .add-plant-form{
+      display: flex;
+      justify-content: start;
+      margin-left: 5px;
+    }
+
+  .btn-plants{
+    width: 95%;
+    display: inline-block;
+    text-align: left;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px 2px 2px 0;
+    border: none;
+    background-color: transparent;
+    text-wrap: pretty;
+  }
+
+  .btn-plants:hover {
+    background-color: #90ad73;
+    cursor: pointer;
+  }
+
+  /* Display the plant information */
+  .plant-container {
+   min-width: 55%;
+   height: 100%;
+   border: 1px solid #85AB49;
+   border-radius: 5px;
+   padding: 10px 20px;
+   background-color: #452E16;
+  }
+
+  .plant-details {
+    max-width: 270px;
+    margin: 10px 45px 10px 0;
+    text-wrap: wrap;
+    color: #85AB49;
+  }
+
+  .plant-title {
+    color: #e9b035;
+    margin-bottom: 10px;
+  }
+  .plant-details > p {
+    margin-bottom: 5px;
+  }
+
+  .image-container {
+    position: relative;
+    width: auto;
+    height: 208px;
+    margin-top: 15px;
+  }
+
+  .plant-img-size{
+    object-fit: contain;
+    width: auto;
+    height: 200px;
+    margin-top: 15px;
+  }
+
+  .photo-credit {
+    position: absolute;
+    bottom: -28px;
+    right: 10px;
+  }
+  .photo-credit a {
+    text-decoration: bold;
+    font-size: .8rem;
+    color: #FEF3E8;
+  }

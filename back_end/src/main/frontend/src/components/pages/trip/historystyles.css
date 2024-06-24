@@ -1,0 +1,211 @@
+/* historystyles.css */
+/*  */
+  
+  .trip-parent-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .left-container {
+    width: 275px;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+
+  .tggl-display{
+    width: 100%;
+  }
+
+  .toggle-btn {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .middle-container {
+    min-width: 750px;
+  }
+
+  .middle-container h2 {
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
+  .search-container {
+    width: 100%;
+  }
+
+  .add-plant-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-delete-plants{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-plant {
+    width: 45px;
+    padding: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+
+  .btn-plant:hover {
+    cursor: pointer;
+    background-color:#45a049;
+  }
+
+  .margin-3 {
+    margin: 1px 3px 0;
+  }
+
+  .add-plant-form{
+    display: flex;
+    justify-content: start;
+    margin-left: 5px;
+  }
+
+.checkbox-style{
+  width: 20px;
+  margin-left: 3px;
+  vertical-align: bottom;
+}
+
+.label-plants{
+  width: 95%;
+  display: inline-block;
+  text-align: left;
+  border-radius: 5px;
+  margin: 8px 2px 1px;
+  padding: 3px 4px;
+  border: none;
+  background-color: transparent;
+  text-wrap: pretty;
+}
+
+.label-plants:hover {
+  background-color: #45a049;
+  color: #FEF3E8;
+  cursor: pointer;
+}
+
+  label {
+    margin-bottom: 10px;
+  }
+
+
+  .form-plant-container{
+    min-width: 55%;
+    height: 100%;
+    border: 1px solid #85AB49;
+    border-radius: 5px;
+    padding-top: 10px;
+    background-color: #452E16;
+  }
+
+  .form-plant-container a {
+    color: #FEF3E8;
+  }
+
+  .pl-image-container{
+    text-align: center;
+    position: relative;
+  }
+
+.display-block{
+  display: block;
+}
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    resize: none;
+  }
+
+  .select-style{
+    margin: 4px 0 ;
+    width: 100%;
+    padding: 8px;
+  }
+
+  #btn-submit-trip{
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #update-form {
+    display: none;
+  }
+  
+  .hike-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .hike-card {
+    background-color: #452E16;
+    border: 2px solid #4caf50; 
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+  }
+  
+  .hike-card strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 8px;
+    color: #FEF3E8;
+  }
+  
+  .hike-card p {
+    margin: 0;
+    font-weight: bold;
+    color: #BB9359; 
+  }
+  
+  .hike-card button {
+    margin-top: 12px;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hike-card button:hover {
+    background-color: #45a049;
+  }
+
+  .btn-edit{
+    margin-right: 5px;
+  }
+
+  span {
+color: #85AB49;
+  }
+
+  label {
+    color: #BB9359;
+    font-weight:bold;
+  }
