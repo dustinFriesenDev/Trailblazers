@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "./search/Search" 
+
 const Home = () => {
     return (
         <div className="page-container">

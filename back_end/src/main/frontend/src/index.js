@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Auth0Provider } from '@auth0/auth0-react';
-import { Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 //creates a React root nd specifies the DOM element with the id 'root' as the container where the React application will be rendered.
 const root = ReactDOM.createRoot(document.getElementById('root'));

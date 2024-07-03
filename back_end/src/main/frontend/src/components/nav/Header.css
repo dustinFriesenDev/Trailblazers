@@ -8,10 +8,10 @@
     background-color: #D4CDB0;
   }
   
-  .navbar a {
+  .navbar .navAnchor, .navbar a {
     text-decoration: none;
     vertical-align: middle;
-    padding: 10px;
+    padding: 3px;
     margin: 0 10px;
     color: #2C2521;
   }
@@ -25,8 +25,4 @@
     list-style-type: none;
     padding: 0;
     height: 30px;
-  }
-  
-  li {
-    padding: 3px
   }

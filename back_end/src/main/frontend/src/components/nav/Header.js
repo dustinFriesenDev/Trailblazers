@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import './Header.css';
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -8,12 +9,12 @@ export default function Header() {
         <header>
             <nav>
                 <ul className="navbar">
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/about'>About</a></li>
-                    <li><a href='/weather'>Weather</a></li>
-                    <li><a href='/animals'>Animals</a></li>
-                    <li><a href='/plants'>Plants</a></li>
-                    <li><a href='http://discourse-trailblazer-forum.social' target="_blank">Forum</a></li>
+                    <Link to="/"><li className="navAnchor">Home</li></Link>
+                    <Link to="/about"><li className="navAnchor">About</li></Link>
+                    <Link to='/weather'><li className="navAnchor">Weather</li></Link>
+                    <Link to='/animals'><li className="navAnchor">Animals</li></Link>
+                    <Link to='/plants'><li className="navAnchor">Plants</li></Link>
+                    <li className="navAnchor"><a href='http://discourse-trailblazer-forum.social' target="_blank">Forum</a></li>
                     {isAuthenticated && (
                         <>
                             <li><a  className="t-decoration" href='/trip'>Your Trips</a></li>
@@ -23,6 +24,7 @@ export default function Header() {
                     
                 </ul>
             </nav>
+            <Outlet />
         </header>
     )
 }
