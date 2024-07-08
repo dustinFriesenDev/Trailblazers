@@ -13,15 +13,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //used to render the entire application
 root.render(
   <Router className="header">
-  <Auth0Provider
-  domain="dev-g0xnoj8lj8v3tr4o.us.auth0.com"
-  clientId ="OJrSHU5SlbyKBQgJ54OqIZ9zQWkYaGjZ"
-  authorizationParams={{
-    redirect_uri: window.location.origin
-  }}
-  >
+    <Auth0Provider
+    domain="dev-kfgon5r87mer53w5.us.auth0.com"
+    clientId ="dWnuGevT8OSdvkHyXeRnxAlHkCrbskfB"
+    authorizationParams={{
+        redirect_uri: window.location.origin
+    }}
+    >
     <App />
-  </Auth0Provider>
+    </Auth0Provider>
   </Router>
 );
 
