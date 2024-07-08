@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  database:
+    build: ./databases
+    container_name: databases
+    restart: always
+    ports:
+      - "3307:3306"
+    networks:
+      - spring_net
+
+  backend:
+    build: ./back_end
+    container_name: trailblazers
+    ports:
+      - "8099:8080"
+    restart: always
+    networks:
+      - spring_net
+    depends_on:
+      - database
+
+networks:
+  spring_net:
