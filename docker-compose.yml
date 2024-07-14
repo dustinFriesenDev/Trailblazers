@@ -1,4 +1,4 @@
-version: "3"
+
 
 services:
   database:
@@ -20,6 +20,14 @@ services:
       - spring_net
     depends_on:
       - database
+  
+  # frontend:
+  #   build: ./front_end
+  #   ports:
+  #     - 3000:3000
+  #   networks:
+  #     - frontend_net
 
 networks:
   spring_net:
+  # frontend_net:

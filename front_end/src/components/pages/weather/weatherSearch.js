@@ -17,7 +17,7 @@ const WeatherSearch = () => {
   //fetch park locations from database
   //set coordinates to use in weather api fetch
   const fetchInfo = async () => {
-    await fetch("http://localhost:8080/parks")
+    await fetch("http://host.docker.internal:8099/parks")
       .then((res) => res.json())
       .then((d) => setData(d));
   };

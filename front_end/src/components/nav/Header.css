@@ -8,11 +8,11 @@
     background-color: #D4CDB0;
   }
   
-  .navbar a {
+  .navbar a, .anchor-link {
     text-decoration: none;
     vertical-align: middle;
-    padding: 10px;
-    margin: 0 10px;
+    padding: 5px;
+    margin: 0 15px;
     color: #2C2521;
   }
   

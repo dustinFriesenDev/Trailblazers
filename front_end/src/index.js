@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //used to render the entire application
 root.render(
-  <React.StrictMode>
+  <Router className="header">
   <Auth0Provider
   domain="dev-g0xnoj8lj8v3tr4o.us.auth0.com"
   clientId ="OJrSHU5SlbyKBQgJ54OqIZ9zQWkYaGjZ"
@@ -21,7 +22,7 @@ root.render(
   >
     <App />
   </Auth0Provider>
-  </React.StrictMode>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

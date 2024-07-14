@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 
 import Header from './components/nav/Header.js';
@@ -21,25 +21,23 @@ function App() {
   
   return (
     <main>
-    <Router className="header">
       <Header/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About/>} />
-        <Route path='/weather' element={<Weather/>} />
-        <Route path='/animals' element={<Animals/>} /> 
-        <Route path='/plants' element={<Plants/>} />
+        <Route path='/weather' element={<Weather />} />
+        <Route path='/animals' element={<Animals />} /> 
+        <Route path='/plants' element={<Plants />} />
         
         {/* Show these pages only if the user is authenticated */}
         {isAuthenticated && (
           <>
-            <Route path='/trip' element={<Trip/>} />
-            <Route path='/profile' element={<Profile/>} />
+            <Route path='/trip' element={<Trip />} />
+            <Route path='/profile' element={<Profile />} />
           </>
         )}
       </Routes>
         <Footer />
-    </Router>
     {error && <p>Authentication Error</p>}
     {!error && isLoading && <p>Loading...</p>}
     {!error && !isLoading && (

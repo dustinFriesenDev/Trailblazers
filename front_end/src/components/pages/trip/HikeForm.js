@@ -22,8 +22,8 @@ const HikeForm = ({ onSubmit, selectedHike, onEdit }) => {
   const { user } = useAuth0();
   const [userName] = useState(user.name);
 
-  const FORM_ENDPOINT = "http://localhost:8080/trips/add";
-  const urlPlants = "http://localhost:8080/plants";
+  const FORM_ENDPOINT = "http://host.docker.internal:8099/trips/add";
+  const urlPlants = "http://host.docker.internal:8099/plants";
   const updateForm = document.getElementById("update-form");
   const submitForm = document.getElementById("submit-form");   
     

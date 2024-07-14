@@ -9,7 +9,7 @@ const HikeList = ({ hikes, onEdit }) => {
   const { user} = useAuth0();
   
   // const navigate = useNavigate();
-  const urlTrips = `http://localhost:8080/trips/all/${user.name}`;
+  const urlTrips = `http://host.docker.internal:8099/trips/all/${user.name}`;
 
   // Fetching trail_blazer trips database
   const fetchInfo = async () => {

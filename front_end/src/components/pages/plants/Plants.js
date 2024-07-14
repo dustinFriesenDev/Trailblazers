@@ -8,7 +8,7 @@ const DisplayPlants = () => {
   const [val, setVal] = useState('');
   const [data, setData] = useState([]);
   const [click, setClick] = useState('');
-  const urlPlants = "http://localhost:8080/plants";
+  const urlPlants = "http://host.docker.internal:8099/plants";
 
   // Fetching plants database
   const fetchInfo = async () => {
