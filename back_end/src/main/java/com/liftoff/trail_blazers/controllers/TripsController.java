@@ -35,7 +35,7 @@ public class TripsController {
         trips.setUserName((tripsFP.getUserName()));
         trips.setFauna(tripsFP.getFauna());
         tripsRepository.save(trips);
-        return "redirect:/trip";
+        return "redirect:/trips/all/{userName}";
     }
 
     @PutMapping("/update/{id}")
@@ -55,6 +55,7 @@ public class TripsController {
 
             return tripsRepository.save(trip);
         }).orElseThrow(()-> new Error("trip not found"));
+
     }
 
     @DeleteMapping("/delete/{id}")
@@ -63,7 +64,7 @@ public class TripsController {
             throw new Error("Trip not found.");
         }
         tripsRepository.deleteById(id);
-        return "redirect:/all";
+        return "redirect:/trips/all/{userName}";
     }
 
 }

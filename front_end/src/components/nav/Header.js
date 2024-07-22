@@ -18,7 +18,7 @@ export default function Header() {
                     {isAuthenticated && (
                         <>
                             <Link to="/trips" className="t-decoration">Your Trips</Link>
-                            <Link to="" className="t-decoration">Profile</Link>
+                            <Link to="/profile" className="t-decoration">Profile</Link>
                         </>
                     )}
                     

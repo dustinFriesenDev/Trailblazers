@@ -80,6 +80,7 @@ small > a:hover, .photo-credit >a:hover {
 
   .btn-plants:hover {
     background-color: #90ad73;
+    color: #462e17;
     cursor: pointer;
   }
 

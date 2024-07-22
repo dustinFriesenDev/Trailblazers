@@ -9,7 +9,7 @@ const HikeList = ({ hikes, onEdit }) => {
   const { user} = useAuth0();
   
   // const navigate = useNavigate();
-  const urlTrips = `http://host.docker.internal:8099/trips/all/${user.name}`;
+  const urlTrips = `http://localhost:8099/trips/all/${user.name}`;
 
   // Fetching trail_blazer trips database
   const fetchInfo = async () => {
@@ -26,7 +26,7 @@ const HikeList = ({ hikes, onEdit }) => {
 
   return (
     <div>
-      <h2>Hike List</h2>
+      {/* <h2>Hike List</h2>
       <h3>Just Added</h3>
       <div className="hike-list-container">
         {hikes.map((hike) => (
@@ -37,7 +37,7 @@ const HikeList = ({ hikes, onEdit }) => {
             <p>Hike Notes: {hike.notes}</p>
           </div>
         ))}
-      </div>
+      </div> */}
       <h3>Saved Trips</h3>
       <div className="hike-list-container">
         {reverseOrder.map((trip) => (
@@ -71,7 +71,7 @@ const HikeList = ({ hikes, onEdit }) => {
             <button
               onClick={() => {
                 const urlDelete =
-                  "http://localhost:8080/trips/delete/" + trip.id;
+                  "http://localhost:8099/trips/delete/" + trip.id;
                 let text = "Are you sure you want to delete this trip?";
                 // eslint-disable-next-line no-restricted-globals
                 if (confirm(text) === true) {

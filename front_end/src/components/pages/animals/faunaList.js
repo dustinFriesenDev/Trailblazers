@@ -6,7 +6,7 @@ const FaunaList = () => {
 
   const [data, setData] = useState([]);
   const [selectedAnimal, setSelectedAnimal] = useState(null);
-  const urlFaunaList = "http://host.docker.internal:8080/animals";
+  const urlFaunaList = "http://localhost:8099/animals";
 //fetch data from database
   const fetchInfo = async () => {
     await fetch(urlFaunaList)

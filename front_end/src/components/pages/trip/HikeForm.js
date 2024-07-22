@@ -22,8 +22,9 @@ const HikeForm = ({ onSubmit, selectedHike, onEdit }) => {
   const { user } = useAuth0();
   const [userName] = useState(user.name);
 
-  const FORM_ENDPOINT = "http://host.docker.internal:8099/trips/add";
-  const urlPlants = "http://host.docker.internal:8099/plants";
+  const FORM_ENDPOINT = "http://localhost:8099/trips/add";
+  const finalFormEndpointUpdate = "http://localhost:8099/trips/update/" + id;
+  const urlPlants = "http://localhost:8099/plants";
   const updateForm = document.getElementById("update-form");
   const submitForm = document.getElementById("submit-form");   
     
@@ -80,7 +81,6 @@ const HikeForm = ({ onSubmit, selectedHike, onEdit }) => {
  
 // *** POST REQUEST FOR SUBMIT FORM *** //
   const handleSubmit = (e) => {
-    e.preventDefault();
     const finalFormEndpoint = e.target.action;
     const data = {
       "tripName": tripName,
@@ -118,8 +118,8 @@ const HikeForm = ({ onSubmit, selectedHike, onEdit }) => {
   };
 
 // *** PUT REQUEST FOR UPDATE FORM *** //
-  function updateTrip() {
-    const finalFormEndpointUpdate = "http://localhost:8080/trips/update/" + id;
+  function updateTrip(e) {
+    const finalFormEndpointUpdate = e.target.action
     const updatedData = {
       tripName: tripName,
       location: location,
@@ -137,15 +137,27 @@ const HikeForm = ({ onSubmit, selectedHike, onEdit }) => {
       },
       body: JSON.stringify(updatedData),
     })
-      .then((response) => {
-        return response.json();
-      })
-      .then((updatedDate) => {});
+      // .then((response) => {
+      //   return response.json();
+      // })
+      // .then((updatedDate) => {})
+      ;
+
     if (selectedHike) {
       onEdit({...selectedHike, id, tripName, location, date, notes, plants, fauna });
     } else {
       onSubmit({ id, tripName, location, date, notes, plants, fauna });
     }
+
+    // Reset form fields
+    setTripName("");
+    setLocation("");
+    setDate("");
+    setNotes("");
+    setPlants([]);
+    setFauna([]);
+    deleteCheckmarks();
+
   }
 
 // **************** PLANTS DISPLAY **************** //
@@ -280,7 +292,7 @@ useEffect(() => {
 
 // *** Animal GET Request *** //
   const fetchAnimalInfo = async () => {
-    await fetch("http://localhost:8080/animals")
+    await fetch("http://localhost:8099/animals")
       .then((res) => res.json())
       .then((d) => setAnimals(d));
   };
@@ -602,7 +614,7 @@ function deleteCheckmarks(){
 
 {/* ********** Update Form Return ********** */}
       <div id="update-form">
-        <form className="form-history" onSubmit={updateTrip}>
+        <form className="form-history" onSubmit={updateTrip} method="PUT" action={finalFormEndpointUpdate}>
           <div className="trip-parent-container">
             <div className="left-container"> {/* Update Form*/}
               <h2>Edit Trip</h2>

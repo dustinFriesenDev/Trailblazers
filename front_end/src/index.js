@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter  } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -12,17 +12,26 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //used to render the entire application
 root.render(
-  <Router className="header">
-  <Auth0Provider
-  domain="dev-g0xnoj8lj8v3tr4o.us.auth0.com"
-  clientId ="OJrSHU5SlbyKBQgJ54OqIZ9zQWkYaGjZ"
-  authorizationParams={{
-    redirect_uri: window.location.origin
-  }}
-  >
-    <App />
-  </Auth0Provider>
-  </Router>
+  <BrowserRouter  className="header">
+    <Auth0Provider
+    domain="dev-g0xnoj8lj8v3tr4o.us.auth0.com"
+    clientId ="OJrSHU5SlbyKBQgJ54OqIZ9zQWkYaGjZ"
+    authorizationParams={{
+      useRefreshTokens: true,
+      cacheLocation:'localstorage',
+      scope: 'openid offline_access',
+      redirect_uri: 'http://localhost:8099/callback',
+      audience: 'valid audience',
+      connection: 'valid connectionid'
+    }}
+    redirect_uri={window.location.origin}
+    >
+
+    
+
+      <App />
+    </Auth0Provider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

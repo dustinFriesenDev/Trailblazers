@@ -21,13 +21,13 @@ services:
     depends_on:
       - database
   
-  # frontend:
-  #   build: ./front_end
-  #   ports:
-  #     - 3000:3000
-  #   networks:
-  #     - frontend_net
+  frontend:
+    build: ./front_end
+    ports:
+      - 3000:3000
+    networks:
+      - frontend_net
 
 networks:
   spring_net:
-  # frontend_net:
+  frontend_net:

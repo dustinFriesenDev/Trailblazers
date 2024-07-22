@@ -32,7 +32,7 @@ function App() {
         {/* Show these pages only if the user is authenticated */}
         {isAuthenticated && (
           <>
-            <Route path='/trip' element={<Trip />} />
+            <Route path='/trips' element={<Trip />} />
             <Route path='/profile' element={<Profile />} />
           </>
         )}
