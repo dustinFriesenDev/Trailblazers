@@ -18,11 +18,6 @@ root.render(
     clientId ="OJrSHU5SlbyKBQgJ54OqIZ9zQWkYaGjZ"
     authorizationParams={{
       useRefreshTokens: true,
-      cacheLocation:'localstorage',
-      scope: 'openid offline_access',
-      redirect_uri: 'http://localhost:8099/callback',
-      audience: 'valid audience',
-      connection: 'valid connectionid'
     }}
     redirect_uri={window.location.origin}
     >
