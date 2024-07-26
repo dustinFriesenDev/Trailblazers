@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css';
 import { useAuth0 } from '@auth0/auth0-react';
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const { isAuthenticated } = useAuth0();
@@ -8,16 +9,16 @@ export default function Header() {
         <header>
             <nav>
                 <ul className="navbar">
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/about'>About</a></li>
-                    <li><a href='/weather'>Weather</a></li>
-                    <li><a href='/animals'>Animals</a></li>
-                    <li><a href='/plants'>Plants</a></li>
-                    <li><a href='http://discourse-trailblazer-forum.social' target="_blank">Forum</a></li>
+                    <li><Link to='/' className="btnLink">Home</Link></li>
+                    <li><Link to='/about' className="btnLink">About</Link></li>
+                    <li><Link to='/weather' className="btnLink">Weather</Link></li>
+                    <li><Link to='/animals' className="btnLink">Animals</Link></li>
+                    <li><Link to='/plants' className="btnLink">Plants</Link></li>
+                    <li><Link to='http://discourse-trailblazer-forum.social' target="_blank" className="btnLink">Forum</Link></li>
                     {isAuthenticated && (
                         <>
-                            <li><a  className="t-decoration" href='/trip'>Your Trips</a></li>
-                            <li><a className="t-decoration" href='/profile'>Profile</a></li>
+                            <li><Link  className="t-decoration" to='/trip'>Your Trips</Link></li>
+                            <li><Link className="t-decoration" to='/profile'>Profile</Link></li>
                         </>
                     )}
                     
