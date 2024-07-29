@@ -2,11 +2,10 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.0'
 	id 'io.spring.dependency-management' version '1.1.4'
-	id 'war'
 }
 
 group = 'com.liftoff'
-version = '0.0.1-SNAPSHOT'
+version = ''
 
 java {
 	sourceCompatibility = '17'
@@ -24,20 +23,5 @@ dependencies {
 	implementation 'mysql:mysql-connector-java:8.0.28'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
-
-tasks.named('test') {
-	useJUnitPlatform()
-}
-
-tasks.named("bootWar") {
-	archiveClassifier = 'boot'
-}
-
-tasks.named("war") {
-	archiveClassifier = ''
-}
-
-
 

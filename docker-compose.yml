@@ -1,0 +1,32 @@
+# version: '2.28'
+# services:
+#   database:
+#     build: ./databases
+#     container_name: databases
+#     restart: always
+#     ports:
+#       - "3307:3306"
+#     networks:
+#       - spring_net
+
+#   backend:
+#     build: ./back_end
+#     container_name: trailblazers
+#     ports:
+#       - "8099:8080"
+#     restart: always
+#     networks:
+#       - spring_net
+#     depends_on:
+#       - database
+  
+#   frontend:
+#     build: ./front_end
+#     ports:
+#       - 3000:3000
+#     networks:
+#       - frontend_net
+
+# networks:
+#   spring_net:
+#   frontend_net:
